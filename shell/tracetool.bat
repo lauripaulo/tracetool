@@ -1,0 +1,1 @@
+java -Djava.io.tmpdir=C:\Temp -jar D:\Junior\git\ufpr\jBluePill\jbluepill\target\jbluepill-0.9.2-jar-with-dependencies.jar br.ufpr.dinf.arch.jbluepill.TraceToolSimulator --mode:socket --outputfile:tracefile --max:5000000 --xmldata:execution.xml --compress
