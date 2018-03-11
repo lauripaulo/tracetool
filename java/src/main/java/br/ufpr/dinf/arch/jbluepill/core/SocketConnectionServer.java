@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import org.apache.logging.log4j.LogManager;
 
-import br.ufpr.dinf.arch.jbluepill.TraceTool;
+import br.ufpr.dinf.arch.jbluepill.TraceToolModel;
 
 public class SocketConnectionServer extends Thread {
 	
@@ -17,10 +17,10 @@ public class SocketConnectionServer extends Thread {
 	private ServerSocket listener;
 	private int clientNumber;
 	private ArrayList<ConnectionHandler> threadList;
-	private TraceTool traceTool;
+	private TraceToolModel traceTool;
 	
 
-	public SocketConnectionServer(int port, TraceTool traceTool) {
+	public SocketConnectionServer(int port, TraceToolModel traceTool) {
 		super("SocketConnectionServer");
 		this.port = port;
 		this.traceTool = traceTool;
