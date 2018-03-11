@@ -265,7 +265,7 @@ public class TraceToolSkip implements TraceToolModel {
 
     public static void main(String[] args) {
         System.out.println("TraceToolSkip " + TraceUtils.APP_VERSION);
-        System.out.println("--------------------");
+        System.out.println("------------------------------");
         System.out.println("");
         System.out.println("Usage: TraceTool --mode:stdin|socket|file --compress --readfile:<filename> "
                         + "--max:<lines> --outputfile:<filename> --xmldata:<filename>");
