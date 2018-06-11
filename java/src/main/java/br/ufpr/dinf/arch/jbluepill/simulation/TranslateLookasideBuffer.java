@@ -29,7 +29,7 @@ public class TranslateLookasideBuffer extends Cache {
 
     @Override
     public long getTagFromAddress(long address) {
-        return address >>> 16;
+        return address >>> 12;
     }
 
     @Override
