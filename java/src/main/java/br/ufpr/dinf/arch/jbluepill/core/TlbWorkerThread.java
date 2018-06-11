@@ -41,6 +41,10 @@ public class TlbWorkerThread extends SimulatorWorkerThread {
             handleCallToTlbList(asm.getAddrAsLongValue(), memEntry);
             
             for (MemoryOperation memOp : asm.getMemoryOperations()) {
+            	
+            	// just update the reference name to avoid confusion reading
+            	// the full TLB text representation when compared to a SB.
+            	memEntry = memMap.getOwnerOfAddress(asm.getAddrAsLongValue());
 
                 // call to simulated buffers
                 handleCallToTlbList(memOp.getAddrAsLongValue(), memEntry);
