@@ -74,7 +74,7 @@ public class MemoryMap implements Serializable {
 		MemoryMapEntry entry = null;
 		for (MemoryMapEntry memMapEntry : getEntries()) {
 			if (address >= memMapEntry.getBaseAddress() && 
-					address <= memMapEntry.getTopAddress()) 
+					address < memMapEntry.getTopAddress()) 
 			{
 				entry = memMapEntry;
 				break;
