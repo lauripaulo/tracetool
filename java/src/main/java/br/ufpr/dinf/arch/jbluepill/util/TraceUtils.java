@@ -36,7 +36,7 @@ public class TraceUtils {
 	
 	private static StringBuilder csvBuffer = new StringBuilder();
 
-	public static String APP_VERSION = "v0.9.2.5";
+	public static String APP_VERSION = "v0.9.2.6";
 	
 	/**
 	 * Inits a buffer to keep track of the simulation evolution stats in a
